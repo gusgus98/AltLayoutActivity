@@ -45,13 +45,14 @@
             android:paddingTop="8dp"
             android:text="Email"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="24sp"
             app:layout_constraintStart_toEndOf="@+id/profile_photo"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/email"
-            android:layout_width="292dp"
-            android:layout_height="130dp"
+            android:layout_width="305dp"
+            android:layout_height="142dp"
             android:layout_marginEnd="219dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
             app:layout_constraintEnd_toEndOf="parent"
@@ -62,21 +63,23 @@
             android:id="@+id/extensionLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="173dp"
-            android:layout_marginEnd="430dp"
+            android:layout_marginTop="148dp"
+            android:layout_marginEnd="364dp"
             android:paddingTop="8dp"
             android:text="Extension"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="34sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/email" />
 
         <TextView
             android:id="@+id/extension"
-            android:layout_width="174dp"
-            android:layout_height="71dp"
-            android:layout_marginTop="9dp"
-            android:layout_marginEnd="343dp"
+            android:layout_width="272dp"
+            android:layout_height="109dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="244dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="48sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/extensionLabel"
             tools:text="Extension" />
@@ -86,11 +89,12 @@
             android:layout_width="132dp"
             android:layout_height="52dp"
             android:layout_marginTop="24dp"
-            android:layout_marginEnd="233dp"
+            android:layout_marginEnd="352dp"
             android:layout_marginBottom="4dp"
             android:paddingTop="8dp"
             android:text="Department"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="24sp"
             app:layout_constraintBottom_toTopOf="@+id/department"
             app:layout_constraintEnd_toStartOf="@+id/profile_photo"
             app:layout_constraintTop_toTopOf="parent" />
@@ -99,7 +103,8 @@
             android:id="@+id/department"
             android:layout_width="404dp"
             android:layout_height="81dp"
-            android:layout_marginStart="81dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="8dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Display2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/departmentLabel"
@@ -107,47 +112,48 @@
 
         <TextView
             android:id="@+id/supervisorLabel"
-            android:layout_width="114dp"
-            android:layout_height="54dp"
+            android:layout_width="190dp"
+            android:layout_height="72dp"
             android:layout_marginStart="40dp"
             android:layout_marginTop="185dp"
             android:paddingTop="8dp"
             android:text="Supervisor"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="34sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/department" />
 
         <TextView
             android:id="@+id/supervisor"
-            android:layout_width="302dp"
-            android:layout_height="81dp"
+            android:layout_width="338dp"
+            android:layout_height="144dp"
             android:layout_marginStart="24dp"
             android:layout_marginTop="18dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="48sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/supervisorLabel"
             tools:text="Supervisor\'s Name" />
 
         <TextView
             android:id="@+id/directReportsLabel"
-            android:layout_width="136dp"
-            android:layout_height="61dp"
-            android:layout_marginTop="265dp"
-            android:layout_marginEnd="218dp"
-            android:layout_marginBottom="147dp"
+            android:layout_width="142dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="276dp"
+            android:layout_marginTop="80dp"
             android:paddingTop="8dp"
             android:text="Direct Reports"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            app:layout_constraintBottom_toTopOf="@+id/directReportsRecyclerView"
-            app:layout_constraintEnd_toStartOf="@+id/extension"
-            app:layout_constraintTop_toBottomOf="@+id/department" />
+            android:textSize="34sp"
+            app:layout_constraintStart_toEndOf="@+id/supervisorLabel"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/directReportsRecyclerView"
-            android:layout_width="178dp"
-            android:layout_height="225dp"
-            android:layout_marginStart="412dp"
-            android:layout_marginTop="32dp"
+            android:layout_width="204dp"
+            android:layout_height="276dp"
+            android:layout_marginStart="456dp"
+            android:layout_marginTop="28dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/directReportsLabel" />
 
